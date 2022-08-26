@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Addition {
+public class Addition { //добавление
     public static void main(String[] args)  throws IOException {
 
         ArrayList<Integer> numeric = new ArrayList<>();
