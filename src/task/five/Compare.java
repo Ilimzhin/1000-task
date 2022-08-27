@@ -20,11 +20,16 @@ public class Compare { //сравнивание
             str = scanner.nextLine();
             list.add(Integer.valueOf(str));
         }
+        String plus;
+        plus = String.valueOf(list.get(0).compareTo(list.get(1)));
+//        plus = (Integer.valueOf(list.get(0)) + Integer.valueOf(list.get(1));
         symbol = (list.get(0) > list.get(1)) ? ">" : (list.get(0) < list.get(1)) ? "<" : "="; //лист 0 и 1 это данные
         fileReader.close();
 
         FileWriter fileWriter = new FileWriter("output.txt");
         fileWriter.write(symbol);
+        fileWriter.write(" ");
+        fileWriter.write(plus);
         fileWriter.close();
 
 //        ArrayList<Integer> list = new ArrayList<>();
